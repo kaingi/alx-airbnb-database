@@ -1,12 +1,12 @@
-✅ Normalization of AirBnB Database to 3NF
-🎯 Objective:
-Ensure the database schema is in Third Normal Form (3NF) — meaning:
+Normalization of AirBnB Database to 3NF
+**Objective:
+-Ensure the database schema is in Third Normal Form (3NF) — meaning:
 
-It is in 1NF (all attributes atomic).
+1. It is in 1NF (all attributes atomic).
 
-It is in 2NF (no partial dependencies).
+2. It is in 2NF (no partial dependencies).
 
-It is in 3NF (no transitive dependencies).
+3. It is in 3NF (no transitive dependencies).
 
 📦 Entities Before Normalization
 We had the following tables:
