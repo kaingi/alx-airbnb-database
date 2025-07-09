@@ -135,15 +135,4 @@ SELECT
     b.start_date,
     b.status
 FROM Users u
-LEFT JOIN Booking b ON u.user_id = b.user_id
-
-UNION
-
-SELECT u.user_id,
-    u.first_name,
-    u.last_name,
-    b.booking_id,
-    b.start_date,
-    b.status
-FROM Users u
-RIGHT JOIN Booking b ON u.user_id = b.user_id;
+FULL OUTER JOIN Booking b ON u.user_id = b.user_id;
