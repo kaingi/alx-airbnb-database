@@ -125,7 +125,8 @@ SELECT
     r.rating,
     r.comment
 FROM Property p
-LEFT JOIN Review r ON p.property_id = r.property_id;
+LEFT JOIN Review r ON p.property_id = r.property_id
+ORDER BY p.name;
 
 SELECT 
     u.user_id,
