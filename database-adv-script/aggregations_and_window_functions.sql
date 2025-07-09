@@ -1,3 +1,12 @@
+SELECT 
+    b.user_id,
+    u.first_name,
+    u.last_name,
+    COUNT(*) AS total_bookings
+FROM Booking b
+JOIN Users u ON b.user_id = u.user_id
+GROUP BY b.user_id, u.first_name, u.last_name;
+
 WITH PropertyBookingCount AS (
     SELECT 
         b.property_id,
